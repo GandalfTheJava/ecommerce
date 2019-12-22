@@ -12,7 +12,7 @@ const FormInput = ({ handleChange, label, ...otherProps }) => {
             {
                 label ?
                     //Selectively render String interpolated value
-                    //I.E if value exists then apple 'shrink' else null
+                    //I.E if value exists then apply 'shrink' else null
                     //All labels will have "form-input-label"
                     (<label className={`${otherProps.value.length} ? 'shrink' : '' form-input-label`} >
                         {label}

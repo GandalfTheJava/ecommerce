@@ -33,7 +33,7 @@ class SignIn extends Component {
                     <FormInput
                         type="email"
                         name="email"
-                        label="Email"
+                        placeholder="Email"
                         value={this.state.email}
                         autoComplete="off"
                         require="true"
@@ -42,7 +42,7 @@ class SignIn extends Component {
                     <FormInput
                         type="password"
                         name="password"
-                        label="Password"
+                        placeholder="Password"
                         value={this.state.password}
                         autoComplete="off"
                         require="true"
