@@ -1,3 +1,5 @@
+import { userActionTypes } from "./user.types";
+
 /*
 {
     type: "Can be anything. I.e. Action 'Update this'"
@@ -15,7 +17,7 @@ const INITIAL_STATE = {
 //IF prevState is ever undefnied, then use INITAL_STATE
 const userReducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
-        case 'SET_CURRENT_USER':
+        case userActionTypes.SET_CURRENT_USER:
             return {
                 ...state, //EVERYTHING ELSE ON THE STATE PLUS THE VALUE WE WANT TO CHANGE ON THE PAYLOAD
                 currentUser: action.payload
