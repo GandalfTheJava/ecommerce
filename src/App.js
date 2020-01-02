@@ -41,7 +41,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header hidden={this.props.hidden} />
         <Switch>
           <Route exact path="/" component={Homepage} />
           <Route path="/Shop" component={ShopPage} />
