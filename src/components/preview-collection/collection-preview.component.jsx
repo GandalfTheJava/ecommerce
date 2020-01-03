@@ -9,9 +9,9 @@ const CollectionPreview = ({ title, items }) => {
             <h1 className="title">{title.toUpperCase()}</h1>
             <div className="preview">
                 {
-                    items.filter((item, idx) => idx < 4)
-                        .map(({ id, ...otherItemProps }) => (
-                            <CollectionItem key={id} {...otherItemProps} />
+                    items.filter((item, idx) => idx < 4) //Return index values of less than 4 (First 4 elements)
+                        .map(item => ( //Pass the whol item in
+                            <CollectionItem key={item.id} item={item} />
                         ))}
             </div>
         </div>
