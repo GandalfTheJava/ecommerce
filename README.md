@@ -1,8 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
-LINK TO THE PROJECT: https://clothing-v.herokuapp.com/
-In the project directory, you can run:
+LINK TO THE PROJECT: https://clothingecommerce.herokuapp.com/
 
 ### `npm start`
 
